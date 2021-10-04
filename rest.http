@@ -1,0 +1,8 @@
+@s1 = http://localhost:4000
+@s2 = http://localhost:5000
+
+GET {{s1}}/Laci
+###
+
+GET {{s2}}/
+###
