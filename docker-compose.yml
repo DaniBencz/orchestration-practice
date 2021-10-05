@@ -1,0 +1,16 @@
+version: "3.1"
+
+services:
+  service:
+    build: service/.
+    ports:
+      - "5000:5000"
+  api:
+    build: api/.
+    environment:
+      PORT: 80
+      URI: http://service:5000/
+    ports:
+      - "4000:80"
+    depends_on:
+      - service

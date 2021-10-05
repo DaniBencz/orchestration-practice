@@ -14,7 +14,7 @@ app.get('/:name', async (req, res) => {
     const { name } = req.params;
     console.log('name is:', name);
 
-    res.send(`Lo, and behold ${name}, the ${attribute}!`);
+    res.send(`Lo and behold ${name}, the ${attribute}!`);
   } catch (e) {
     console.log(e);
     res.send('boo-boo...');
