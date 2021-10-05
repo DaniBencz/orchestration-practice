@@ -1,7 +1,7 @@
 import express from "express";
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = 5000;
 
 app.get('/', (req, res) => {
   const attributes = ['mighty', 'fearless', 'invincible', 'great'];
