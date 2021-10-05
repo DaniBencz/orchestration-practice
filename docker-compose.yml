@@ -1,16 +1,25 @@
-version: "3.1"
+version: "3.7"
 
 services:
   service:
     build: service/.
+    image: swarm-practise_service #nswarm
+    networks: #swarm
+      - behold
     ports:
       - "5000:5000"
+
   api:
     build: api/.
+    image: swarm-practise_api
+
+    networks:
+      - behold
     environment:
       PORT: 80
       URI: http://service:5000/
     ports:
       - "4000:80"
-    depends_on:
-      - service
+
+networks: #swarm
+  behold:
