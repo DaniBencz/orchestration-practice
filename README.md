@@ -1,5 +1,7 @@
 ## Docker Swarm Practice
 
+`npm i` in both /api and /service folder
+
 Start with Docker Compose:  
 `docker-compose up`  
 Stop:  
