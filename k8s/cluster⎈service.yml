@@ -1,14 +1,14 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ingress
+  name: clusterService
   # namespace: kiskutya
 spec:
   # type defaults to ClusterIP
-  type: LoadBalancer
+  # type: LoadBalancer
   selector:
     # calls pods, not deployments!
-    app: api
+    app: myService
   ports:
-    - port: 4000
-      targetPort: 80
+    - port: 80
+      targetPort: 5000
