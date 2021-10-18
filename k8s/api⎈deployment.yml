@@ -1,26 +1,27 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: apiDeployment
+  name: api-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: myApi
+      app: my-api
   template:
     metadata:
       labels:
-        app: myApi
+        app: my-api
     spec:
       containers:
-        - name: apiContainer
-          image: swarm-practise_api
+        - name: api-container
+          image: swarm-practise_api:1
+          imagePullPolicy: Never # use local image registry
           ports:
             - containerPort: 80
             # - port: 4000
             #   targetPort: 80
           env:
             - name: PORT
-              value: 80
+              value: "80"
             - name: URI
-              value: clusterService
+              value: http://cluster-service:8080

@@ -22,10 +22,7 @@
 
 **Start with Kubernetes:**
 
-- `kubectl apply -f k8s/.yml`
-- `kubectl apply -f k8s/.yml`
-- `kubectl apply -f k8s/.yml`
-- `kubectl apply -f k8s/.yml`
+- `kubectl apply -f k8s/`
 
 **Usage:**  
 `localhost:4000/anyName`

@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: serviceDeployment
+  name: service-deployment
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
-      app: myService
+      app: my-service
   template:
     metadata:
       labels:
-        app: myService
+        app: my-service
     spec:
       containers:
-        - name: serviceContainer
-          image: swarm-practise_service
+        - name: service-container
+          image: swarm-practise_service:1
           ports:
-            - containerPort: 80
+            - containerPort: 5000
             # - port: 4000
             #   targetPort: 80
           env:
-            - name: HELLO
-              value: hello
+            - name: NOPE
+              value: no need one
