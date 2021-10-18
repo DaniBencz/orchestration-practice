@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node .",
-    "dev": "PORT=4000 URI=http://localhost:5000/ node ."
+    "start": "PORT=4000 URI=http://localhost:5000/ node ."
   },
   "keywords": [],
   "author": "",

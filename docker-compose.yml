@@ -3,7 +3,7 @@ version: "3.7"
 services:
   service:
     build: service/.
-    image: swarm-practise_service #nswarm
+    image: swarm-practise_service:1 # swarm
     networks: #swarm
       - behold
     ports:
@@ -11,8 +11,7 @@ services:
 
   api:
     build: api/.
-    image: swarm-practise_api
-
+    image: swarm-practise_api:1
     networks:
       - behold
     environment:

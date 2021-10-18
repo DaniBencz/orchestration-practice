@@ -5,8 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node .",
-    "dev": "node ."
+    "start": "node ."
   },
   "keywords": [],
   "author": "",
