@@ -22,7 +22,11 @@
 
 **Start with Kubernetes:**
 
-- `kubectl apply -f k8s/`
+- `kubectl apply -f mychart/templates/`
+
+**Start with Helm:**
+
+- `helm install myrelease ./mychart`
 
 **Usage:**  
 `localhost:4000/anyName`

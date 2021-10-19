@@ -10,5 +10,5 @@ spec:
     # calls pods, not deployments!
     app: my-api
   ports:
-    - port: 8080 # listening on
+    - port: 4000 # listening on
       targetPort: 80 # fwd to
