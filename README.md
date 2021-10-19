@@ -2,8 +2,10 @@
 
 **Start manually:**
 
-- `npm i` in both /api and /service folder
-- `npm run start` in both folders
+- `npm --prefix ./api i`
+- `npm --prefix ./api start`
+- `npm --prefix ./service i`
+- `npm --prefix ./service start`
 
 **Start with Docker Compose:**
 
@@ -28,7 +30,12 @@
 **Start with Helm:**
 
 - make sure that the images are built already
-- `helm install <nameofrelease> ./helm`
+- `helm install <nameofrelease> ./helm`  
+  or
+- `helm install <nameofrelease> helm-0.1.0.tgz`  
+  Stop:
+- `helm delete <nameofrelease>`
 
-**Usage:**  
-`localhost:4000/anyName`
+**Usage:**
+
+- `localhost:4000/anyName`
