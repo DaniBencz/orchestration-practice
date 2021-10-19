@@ -22,11 +22,13 @@
 
 **Start with Kubernetes:**
 
+- make sure that the images are built already
 - `kubectl apply -f helm/templates/`
 
 **Start with Helm:**
 
-- `helm install myrelease ./helm`
+- make sure that the images are built already
+- `helm install <nameofrelease> ./helm`
 
 **Usage:**  
 `localhost:4000/anyName`
