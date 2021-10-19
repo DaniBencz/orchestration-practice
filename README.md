@@ -1,4 +1,4 @@
-## Docker Swarm Practice
+## Orchestration Practice
 
 **Start manually:**
 
@@ -22,11 +22,11 @@
 
 **Start with Kubernetes:**
 
-- `kubectl apply -f mychart/templates/`
+- `kubectl apply -f helm/templates/`
 
 **Start with Helm:**
 
-- `helm install myrelease ./mychart`
+- `helm install myrelease ./helm`
 
 **Usage:**  
 `localhost:4000/anyName`
